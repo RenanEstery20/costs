@@ -23,6 +23,24 @@
         }
       ],
       "id": 1
+    },
+    {
+      "name": "Jarré Empreendimentos",
+      "budget": "20000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 5000,
+      "services": [
+        {
+          "name": "Estrutura do projeto",
+          "cost": "5000",
+          "description": "Foi estruturado todo projeto com react ",
+          "id": "59f662d0-3d5d-44a4-946d-935d425cfd21"
+        }
+      ],
+      "id": 2
     }
   ],
   "categories": [
