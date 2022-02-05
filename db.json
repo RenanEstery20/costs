@@ -1,61 +1,6 @@
 {
   "projects": [
     {
-      "name": "teste1",
-      "budget": "500",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "const": 0,
-      "services": [],
-      "id": 1
-    },
-    {
-      "name": "teste novo",
-      "budget": "300",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "const": 0,
-      "services": [],
-      "id": 2
-    },
-    {
-      "name": "meu projeto teste",
-      "budget": "5000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "const": 0,
-      "services": [],
-      "id": 3
-    },
-    {
-      "name": "aaa",
-      "budget": "444",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "const": 0,
-      "services": [],
-      "id": 4
-    },
-    {
-      "name": "aaaaaaa",
-      "budget": "4",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "const": 0,
-      "services": [],
-      "id": 5
-    },
-    {
       "name": "erer",
       "budget": "5",
       "category": {
