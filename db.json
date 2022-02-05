@@ -1,5 +1,30 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "name": "Projeto para bssoft",
+      "budget": "4000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 3200,
+      "services": [
+        {
+          "name": "Estrutura do projeto",
+          "cost": "1200",
+          "description": "Foi estruturado todo projeto com react ",
+          "id": "5983504c-6720-4453-af33-16b6eda9e78e"
+        },
+        {
+          "name": "Cruds",
+          "cost": "2000",
+          "description": "Realizado o crud para o projeto",
+          "id": "2fbebd2e-9bd0-4c2c-ae35-97653ca67a5d"
+        }
+      ],
+      "id": 1
+    }
+  ],
   "categories": [
     {
       "id": 1,
