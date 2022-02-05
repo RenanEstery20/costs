@@ -1,28 +1,5 @@
 {
-  "projects": [
-    {
-      "name": "erer",
-      "budget": "5",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "const": 0,
-      "services": [],
-      "id": 6
-    },
-    {
-      "name": "teste bs",
-      "budget": "5000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "const": 0,
-      "services": [],
-      "id": 7
-    }
-  ],
+  "projects": [],
   "categories": [
     {
       "id": 1,

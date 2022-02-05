@@ -1,19 +1,19 @@
+import { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
-import { useState, useEffect } from 'react'
-
-import Message from '../layout/Message'
 import Container from '../layout/Container'
 import Loading from '../layout/Loading'
+
 import LinkButton from '../layout/LinkButton'
 import ProjectCard from '../project/ProjectCard'
+import Message from '../layout/Message'
 
 import styles from './Projects.module.css'
 
 function Projects() {
   const [projects, setProjects] = useState([])
   const [removeLoading, setRemoveLoading] = useState(false)
-  const [projectMessage, setprojectMessage] = useState('')
+  const [projectMessage, setProjectMessage] = useState('')
 
   const location = useLocation()
   let message = ''
@@ -22,21 +22,22 @@ function Projects() {
   }
 
   useEffect(() => {
-    setTimeout(() => {
-      fetch(`http://localhost:5000/projects/`, {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      })
-        .then(resp => resp.json())
-        .then(data => {
-          console.log(data)
-          setProjects(data)
-          setRemoveLoading(true)
+    // Para ver o loading
+    setTimeout(
+      () =>
+        fetch('http://localhost:5000/projects', {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json'
+          }
         })
-        .catch(err => console.log(err))
-    }, 300)
+          .then(resp => resp.json())
+          .then(data => {
+            setProjects(data)
+            setRemoveLoading(true)
+          }),
+      100
+    )
   }, [])
 
   function removeProject(id) {
@@ -47,11 +48,10 @@ function Projects() {
       }
     })
       .then(resp => resp.json())
-      .then(() => {
+      .then(data => {
         setProjects(projects.filter(project => project.id !== id))
-        setprojectMessage('Projeto removido com Sucesso!')
+        setProjectMessage('Projeto removido com sucesso!')
       })
-      .catch(err => console.error(err))
   }
 
   return (
@@ -76,7 +76,7 @@ function Projects() {
           ))}
         {!removeLoading && <Loading />}
         {removeLoading && projects.length === 0 && (
-          <p>Não há projetos cadastrados</p>
+          <p>Não há projetos cadastrados!</p>
         )}
       </Container>
     </div>

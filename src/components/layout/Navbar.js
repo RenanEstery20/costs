@@ -4,9 +4,9 @@ import Container from './Container'
 import styles from './Navbar.module.css'
 import logo from '../../img/costs_logo.png'
 
-function NavBar() {
+function Navbar() {
   return (
-    <nav className={styles.navbar}>
+    <div className={styles.navbar}>
       <Container>
         <Link to="/">
           <img src={logo} alt="Costs" />
@@ -26,8 +26,8 @@ function NavBar() {
           </li>
         </ul>
       </Container>
-    </nav>
+    </div>
   )
 }
 
-export default NavBar
+export default Navbar
